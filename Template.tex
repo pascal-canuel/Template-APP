@@ -1,0 +1,39 @@
+\documentclass[canadien, 12pt]{article}
+\input{Dependencies.tex}
+
+\title{APP X}
+\author{Prénom et nom des auteurs}
+\date{Date de remise}
+
+\begin{document}
+\input{Renaming.tex}
+\pagenumbering{gobble}
+
+\input{Presentation.tex}
+\newpage
+
+\pagenumbering{roman}
+
+\tableofcontents
+\newpage
+
+\listoffigures
+\listoftables
+\newpage
+
+\pagenumbering{arabic}
+
+\section{Introduction}
+\input{Introduction.tex}
+
+\section{Développement}
+\input{Development.tex}
+
+\section{Conclusion}
+\input{Conclusion.tex}
+
+\section{Références}
+\bibliography{Bibliography.bib}{}
+\bibliographystyle{plain}
+
+\end{document}

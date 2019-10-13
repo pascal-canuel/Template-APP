@@ -1,0 +1,34 @@
+\usepackage{amsmath} % display equations
+\usepackage{graphicx} % display figures
+\usepackage{float} % [H] turn figures into non-floating
+\usepackage{times} % times font
+
+% language typography
+\usepackage{babel}
+\usepackage[T1]{fontenc}
+
+\usepackage{caption} % figures and tables header in bold
+\captionsetup{skip=10pt, font=bf}
+
+% remove default tab at the beginning of sections
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}
+
+% capitalize sections name
+\usepackage{sectsty,textcase}
+\allsectionsfont{\MakeTextUppercase}
+
+% dot after section number
+\usepackage{secdot}
+
+% remove default references title
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
+% table spacing
+%\setlength{\tabcolsep}{25pt} % horizontal
+\renewcommand{\arraystretch}{1.8} % vertical
+
+% left align and horizontal spacing
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
