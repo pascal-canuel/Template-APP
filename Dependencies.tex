@@ -1,5 +1,7 @@
 \usepackage{amsmath} % display equations
 \usepackage{graphicx} % display figures
+\usepackage{pdfpages} % \includepdf{} fill a page with an external pdf image
+\usepackage{lscape} % landscape orientation
 \usepackage{float} % [H] turn figures into non-floating
 \usepackage{times} % times font
 
@@ -32,3 +34,7 @@
 % left align and horizontal spacing
 \usepackage{array}
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\usepackage{url} % url hyperlink
+\usepackage[hidelinks]{hyperref} % hyperlink interactions
+\renewcommand{\UrlFont}{\text} % set url font to normal
